@@ -1,4 +1,6 @@
 
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_home/pages/clockFormular.dart';
 import 'package:flutter_home/util/optionsBox.dart';
@@ -32,6 +34,7 @@ class _MyWidgetState extends State<homePage> {
 
             //children start
 
+            //BLUE BOX
             Container(
               height: 160,
               decoration: BoxDecoration(
@@ -39,25 +42,45 @@ class _MyWidgetState extends State<homePage> {
                 borderRadius: BorderRadius.only(
                   bottomRight: Radius.circular(20),
                   bottomLeft: Radius.circular(20)
-                )
+                ),
+                
               ),
+              
+              //PROFILE + NAME
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  //profile
-
+                  
+                  Image.asset('assets/images/user.png', height: 100, alignment: Alignment.center,),
+                  
+                  Text('Name', textAlign: TextAlign.left,)
                   //name
 
               ]),
             ),
             
-
-            Padding(
+            //CLOCK
+            /*Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: horizontalPadding, 
                 vertical: verticalPadding),
+                child: Image.asset('/assets/images/placeholder.jpg', height: 80, alignment: Alignment.center,)
+            ),*/
+
+            Container(
+              height:180,
+              alignment: Alignment.center,
+              padding: EdgeInsets.symmetric(vertical: 10),
+              //padding: EdgeInsets.symmetric(vertical: 10),
+              child: 
+              Image.asset('assets/images/placeholder.png', 
+              alignment: Alignment.bottomCenter,)
             ),
 
-            const SizedBox(height:20),
+
+            //GRIDVIEW
+            //distance from the blue boxes to the
+            //const SizedBox(height:20),
 
             Padding(
               padding: EdgeInsets.symmetric(

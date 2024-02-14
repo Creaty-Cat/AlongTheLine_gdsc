@@ -20,12 +20,14 @@ class optionsBox extends StatelessWidget {
         //Handle
       },
       child: Padding( 
+        //Padding for the outside of the blue boxes
         padding: const EdgeInsets.all(15.0),
         child: Container(
         decoration: BoxDecoration(
           color: Color.fromARGB(92, 137, 212, 247),
           borderRadius: BorderRadius.circular(24),
           ),
+          //Padding for the pics inside the boxes
         padding: EdgeInsets.symmetric(vertical: 25),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
