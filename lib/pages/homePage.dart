@@ -67,14 +67,22 @@ class _MyWidgetState extends State<homePage> {
                 child: Image.asset('/assets/images/placeholder.jpg', height: 80, alignment: Alignment.center,)
             ),*/
 
-            Container(
-              height:180,
-              alignment: Alignment.center,
-              padding: EdgeInsets.symmetric(vertical: 10),
-              //padding: EdgeInsets.symmetric(vertical: 10),
-              child: 
-              Image.asset('assets/images/placeholder.png', 
-              alignment: Alignment.bottomCenter,)
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyForm()),
+                );
+              },
+              child: Container(
+                height: 180,
+                alignment: Alignment.center,
+                padding: EdgeInsets.symmetric(vertical: 10),
+                child: Image.asset(
+                  'assets/images/placeholder.png',
+                  alignment: Alignment.bottomCenter,
+                ),
+              ),
             ),
 
 
