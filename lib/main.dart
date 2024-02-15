@@ -5,6 +5,6 @@ import 'package:flutter_home/pages/homePage.dart';
 void main() => runApp(
   MaterialApp(
     theme: ThemeData(),
-    home: homePage(),
+    home: HomePage(),
   )
 );
