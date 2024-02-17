@@ -8,6 +8,7 @@ import 'package:flutter_home/pages/maps.dart';
 import 'package:image/image.dart' as img;
 import 'package:http/http.dart' as http;
 import 'package:file_picker/file_picker.dart';
+import 'package:flutter_home/pages/profilePage.dart';
 
 List<CameraDescription> cameras = [];
 
@@ -179,8 +180,8 @@ Widget build(BuildContext context) {
               label: 'Favorites',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.settings, size: 35),
-              label: 'Settings',
+              icon: Icon(Icons.account_circle, size: 35),
+              label: 'Profile',
             ),
           ],
           currentIndex: 0,
@@ -200,7 +201,11 @@ Widget build(BuildContext context) {
                 // Navigate to Favorites page
                 break; 
                 case 3: 
-                //Navigate to Settings page
+                Navigator.push(
+  context,
+  MaterialPageRoute(builder: (context) => ProfilePage()),
+);
+
                 break; 
                 default: 
                 //Do Nothing 

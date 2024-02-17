@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_home/pages/cameraPage.dart';
+import 'package:flutter_home/pages/tracker.dart';
 
 
 class OptionsBox extends StatelessWidget {
@@ -20,7 +21,7 @@ class OptionsBox extends StatelessWidget {
       onTap: (){
         Navigator.push(
     context,
-    MaterialPageRoute(builder: (context) => TextDetectionPage()),
+    MaterialPageRoute(builder: (context) => TrackerPage()),
   );
       },
       child: Padding( 

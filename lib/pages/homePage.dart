@@ -6,6 +6,7 @@ import 'package:flutter_home/util/OptionsBox.dart';
 import 'package:flutter_home/pages/cameraPage.dart'; 
 import 'package:flutter_home/pages/graph.dart'; 
 import 'package:flutter_home/pages/maps.dart'; 
+import 'package:flutter_home/pages/profilePage.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -32,27 +33,6 @@ class _MyWidgetState extends State<HomePage> {
           children: [
             Column(
               children: [
-                Container(
-                  height: 160,
-                  decoration: BoxDecoration(
-                    color: Color.fromARGB(92, 137, 212, 247),
-                    borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(20),
-                      bottomLeft: Radius.circular(20),
-                    ),
-                  ),
-                  //PROFILE + NAME
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  
-                  Image.asset('assets/images/user.png', height: 100, alignment: Alignment.center,),
-                  
-                  Text('Name', textAlign: TextAlign.left,)
-                  //name
-
-              ]),
-            ),
            //CLOCK
              GestureDetector(
               onTap: () {
@@ -148,8 +128,8 @@ class _MyWidgetState extends State<HomePage> {
                     label: 'Favorites',
                   ),
                   BottomNavigationBarItem(
-                    icon: Icon(Icons.settings, size: 35),
-                    label: 'Settings',
+                    icon: Icon(Icons.account_circle, size: 35),
+                    label: 'Profile',
                   ),
                 ],
                 currentIndex: 0,
@@ -169,7 +149,10 @@ class _MyWidgetState extends State<HomePage> {
                       //  Favorites page
                       break;
                     case 3:
-                      // Settings page
+                      Navigator.push(
+                     context,
+                     MaterialPageRoute(builder: (context) => ProfilePage()),
+                      );
                       break;
                     default:
                       // Do nothing

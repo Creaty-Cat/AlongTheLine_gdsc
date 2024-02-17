@@ -75,8 +75,8 @@ class NextPage extends StatelessWidget {
             label: 'Favorites',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings, size: 35),
-            label: 'Settings',
+            icon: Icon(Icons.account_circle, size: 35),
+            label: 'Profile',
           ),
         ],
         currentIndex: 0,
