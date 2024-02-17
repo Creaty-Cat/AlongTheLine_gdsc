@@ -31,10 +31,23 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  camera: ^0.10.5+9
+  image: ^4.1.7
+  http: ^1.2.0
+  google_maps_flutter: ^2.5.0
+  webview_flutter: ^2.0.13
+  flutter_polyline_points: ^2.0.0
+  location: ^4.4.0 
+  flutter_svg: ^1.1.0
+  file_picker: ^4.0.0
+  charts_flutter: ^0.12.0
+  font_awesome_flutter: ^10.7.0
+  flutter_material_pickers: ^3.1.4+1
+  intl: ^0.17.0
+  date_format: ^2.0.7
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +81,7 @@ flutter:
     - assets/images/travel.png
     - assets/images/placeholder.png
     - assets/images/user.png
+    - assets/images/add.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
