@@ -1,16 +1,17 @@
-# flutter_home
 
-A new Flutter project.
+<img width="355" alt="logo" src="https://github.com/Creaty-Cat/flutter_home/assets/119871916/e3201eeb-4945-405d-afdc-0d6bc57bf6f7">
 
-## Getting Started
+## Project Description:
+This Flutter app is tailored for individuals with dyscalculia, aiming to simplify travel planning and navigation. By offering intuitive features and clear visual aids, we aim to enhance independence and improve the travel experience for users.
 
-This project is a starting point for a Flutter application.
+## Features:
+- Timetable visualization
+- Google Maps Integration
+- Time Management Assistance
+- Appointment Management 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation Instructions:
+1. Clone the repository from [GitHub link](https://github.com/Creaty-Cat/flutter_home).
+2. Ensure Flutter and Dart SDK are installed on your system.
+3. Run flutter pub get in the project directory to install dependencies.
+4. Connect your device/emulator and run flutter run to launch the app.
